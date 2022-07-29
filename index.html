@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projeto staart">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Quick Staart</title>
+</head>
+
+<body>
+    <div class="container-principal">
+        <div class="container central"> <!--Container da esquerda-->
+            <div class="principal">
+                <h1 class="principal-logo"> 💻  Flash</h1>
+                <h2 class="principal-titulo">Aprenda de forma rápida, simples e divertida o vocabulário técnico</h2>
+                <p class="principal-descricao">No cartão você encontrará palavras e expressões que irá utilizar no seu dia a dia como dev. Aproveite para testar seus conhecimentos e fixar o significado</p>
+
+                <div class="botoes">
+                    <button onclick="buscarInfo()" class="botao">Próxima pergunta</button>
+                    <button onclick="revelarResposta()" class="botao">Revelar resposta</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container central" id="cardContainer"> <!--Container da direita-->
+
+            <div class="card"> <!--Card-->
+
+                <div class="card-cabecalho central"> <!--Card pergunta-->
+                    <h1 class="card-titulo">o que é HTML?</h1>
+                </div>
+
+                <div id="resposta" class="card-conteudo blur"> <!--Card resposta-->
+                    <p>A Linguagem de Marcação de Hipertexto (HTML) é uma linguagem de computador que compõe a maior parte das páginas da internet e dos aplicativos online</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/script.js"></script>
+</html>
